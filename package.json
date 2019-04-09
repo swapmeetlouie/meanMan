@@ -1,6 +1,6 @@
 {
-  "name": "osbp-dash",
-  "version": "0.1.7",
+  "name": "mean-dash",
+  "version": "0.2.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
