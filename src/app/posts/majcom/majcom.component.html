@@ -1,0 +1,93 @@
+<div *ngIf="post">
+    <table>
+        <tr>
+            <td>
+                <ngx-charts-advanced-pie-chart 
+                    [view]="[400, 200]" 
+                    [scheme]="colorScheme"
+                    [valueFormatting]="sbFormat" 
+                    [results]="post.spendBreak"
+                    [percentageFormatting]="percFormat"
+                    [animations]="false">
+                </ngx-charts-advanced-pie-chart>
+            </td>
+            <td>
+            <tr>
+                <td class="title">Top Four Fiscal Year 2019 Small Business Portfolio Group Spends as of {{post.reportDate}}</td>
+            </tr>
+            <tr>
+                <ngx-charts-tree-map 
+                    class="chart-container" 
+                    [view]="[780,230]"
+                    [scheme]="portScheme" 
+                    [results]="post.portGroups"
+                    [tooltipDisabled]="false" 
+                    [animations]="false" 
+                    [valueFormatting]="portFormat">
+                </ngx-charts-tree-map>
+            </tr>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="title">
+                Fiscal Year 2016, 2017, 2018, and 2019 Year-to-Date Prime Contract Awards through {{post.reportDate}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ngx-charts-bar-horizontal-stacked 
+                    class="chart-container" 
+                    [view]="[1200, 220]" 
+                    [scheme]="breakScheme"
+                    [results]="breakAward" 
+                    [legend]="true" 
+                    [showGridLines]="true" 
+                    [legendTitle]="null" 
+                    [xAxis]="true" 
+                    [showXAxisLabel]="true" 
+                    [xAxisTickFormatting]="treeFormat"
+                    [yAxis]="true" 
+                    [showYAxisLabel]="true" 
+                    [xScaleMax]="90" 
+                    [tooltipDisabled]="false" 
+                    [barPadding]="8"
+                    [animations]="false">
+                </ngx-charts-bar-horizontal-stacked>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <td>
+            <tr>
+                <ngx-gauge [type]="'full'" [size]="gaugeSize" [min]="0" [max]="post.maxSb*100" [value]="post.percSb*100"
+                    [label]="'SB Goal: '+ (post.goalSb*100).toFixed(2) + '%'" [thick]="15" [foregroundColor]="post.sbColor"
+                    [backgroundColor]="'gray'" [append]="'%'">
+                </ngx-gauge>
+                <ngx-gauge [type]="'full'" [size]="gaugeSize" [min]="0" [max]="post.maxSdb*100" [value]="post.percSdb*100"
+                    [label]="'SDB Goal: ' + (post.goalSdb*100).toFixed(2) + '%'" [thick]="15" [foregroundColor]="post.sdbColor"
+                    [backgroundColor]="'gray'" [append]="'%'">
+                </ngx-gauge> 
+                <ngx-gauge [type]="'full'" [size]="gaugeSize" [min]="0" [max]="post.maxSdvo*100" [value]="post.percSdvo*100"
+                    [label]="'SDVO Goal: ' + (post.goalSdvo*100).toFixed(2) + '%'" [thick]="15" [foregroundColor]="post.sdvoColor"
+                    [backgroundColor]="'gray'" [append]="'%'">
+                </ngx-gauge>
+                <ngx-gauge [type]="'full'" [size]="gaugeSize" [min]="0" [max]="post.maxWosb*100" [value]="post.percWosb*100"
+                    [label]="'WOSB Goal: ' + (post.goalWosb*100).toFixed(2) + '%'" [thick]="15" [foregroundColor]="post.wosbColor"
+                    [backgroundColor]="'gray'" [append]="'%'">
+                </ngx-gauge> 
+                <ngx-gauge [type]="'full'" [size]="gaugeSize" [min]="0" [max]="post.maxHubzone*100" [value]="post.percHubzone*100"
+                    [label]="'HUBZone Goal: ' + (post.goalHubzone*100).toFixed(2) + '%'" [thick]="15" [foregroundColor]="post.hubzoneColor"
+                    [backgroundColor]="'gray'" [append]="'%'">
+                </ngx-gauge>  
+            </tr>
+            <ngx-charts-number-card [view]="[1200,125]" 
+                    [scheme]="post.cardColor" 
+                    [results]="post.cardSpend" 
+                    [innerPadding]="5"
+                    [valueFormatting]="dollarValueFormat">
+            </ngx-charts-number-card>  
+        </td>
+    </table>
+</div>

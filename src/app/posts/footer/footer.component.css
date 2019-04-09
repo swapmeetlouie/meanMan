@@ -1,0 +1,17 @@
+.fa-2x {
+    vertical-align: middle;
+    color: whitesmoke;
+    font-size: 50px !important;
+  }
+  
+  #text {
+    font-family: tahoma;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: left;
+    color:whitesmoke;
+    vertical-align: middle;
+    display: inline-block;
+    width: 1100px;
+  }

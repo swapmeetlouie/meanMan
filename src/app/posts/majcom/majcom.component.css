@@ -1,0 +1,133 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+/* @import "~font-awesome/css/font-awesome.css"; */
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+body {
+  height: 750px !important;
+  /* width: 1250px !important; */
+  font-family: tahoma !important; 
+  vertical-align: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px !important;
+  color:black;
+  background-color: white;
+}
+
+td.title {
+  font-size: 15px !important;
+  padding: 0px !important;
+  font-weight: bold !important;
+  position: relative !important;
+  line-height: 16px !important;
+  top: 2px !important; 
+}
+
+td.offset {
+  position: absolute !important;
+  left: 570.5px !important;
+  /* top: -5px !important; */
+}
+
+/* Total value format  */
+.advanced-pie-legend .total-value {
+  font-size: 20px !important;
+  line-height: 1.005 !important;
+}
+
+/* Total spend format  */
+.advanced-pie-legend .total-label {
+  font-size: 22px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0.75px !important; 
+}
+
+/* OTSB-SB Breakdown */
+.advanced-pie-legend .legend-items-container .legend-items .legend-item .item-value {
+  margin-left: 0px !important; 
+  font-size: 19px !important;
+  margin-top: 0 !important;
+}
+/* Size of color bands */
+.advanced-pie-legend .legend-items-container .legend-items .legend-item .item-color {
+  height: 65px !important;
+  /* width: 20px !important; */
+}
+
+/* OTSB SB Labels  */
+.advanced-pie-legend .legend-items-container .legend-items .legend-item .item-label {
+  /* line-height: 1 !important; */
+  font-size: 14px !important;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+  opacity: 100 !important;
+} 
+
+/* Percentage breakdown labels */
+.advanced-pie-legend .legend-items-container .legend-items .legend-item .item-percent {
+  font-size: 14px !important;
+  opacity: 100 !important;
+  margin-left: 0px !important;
+}
+
+/* SB OTSB Product Service Breakdown */
+.gridline-path {
+  stroke: grey !important;
+  /* stroke-dasharray: 5 !important; */
+  stroke-width: 3 !important;
+}
+
+.chart-legend .legend-labels {
+background: white !important;
+ color: black !important; 
+}
+
+.chart-legend .legend-label {
+  background: white !important;
+  font-size: 22px !important;
+  color: black !important;
+}
+
+.chart-legend .legend-label-text {
+  font-size: 14px !important;
+  line-height: 29px !important;
+}
+
+.chart-legend .legend-label-color {
+  padding-bottom: 20px !important;
+  height: 30px !important;
+  width: 30px !important;
+  /* color: white !important; */
+
+}
+
+.reading-label {
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  color: black !important;
+}
+
+/* Card labels  */
+.cell .trimmed-label p {
+  font-size: 15px !important;
+  line-height: 20px !important;
+}
+
+/* Card spend values */
+.cell .value-text  {
+  font-size: 20px !important;
+}
+
+/* Portfolio Group Labels */
+.tree-map .label {
+  font-weight: 650 !important;
+  font-size: 13px !important;
+}
+
+.tree-map .treemap-val {
+  font-weight: 650 !important;
+  font-size: 13px !important;
+}

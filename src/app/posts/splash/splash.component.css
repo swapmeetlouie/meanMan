@@ -1,0 +1,22 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+body {
+  /* height: 750px !important; */
+  /* width: 1250px !important; */
+  font-family: tahoma !important; 
+  vertical-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px !important;
+  color:black;
+  background-color: white;
+}
+
+/* Color matches header and footer */
+.fa-square {
+  color: #024272;
+} 
