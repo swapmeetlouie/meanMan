@@ -1,7 +1,6 @@
 <div *ngIf="post">
-    JNNMNNN
-
-    <table>
+        <img src="assets/img/{{post.majCom}}-logo.png">    
+    <table>  
         <tr>
             <td>
                 <ngx-charts-advanced-pie-chart 
@@ -14,22 +13,24 @@
                 </ngx-charts-advanced-pie-chart>
             </td>
             <td>
-            <tr>
-                <td class="title">Top Four Fiscal Year 2019 Small Business Portfolio Group Spends as of {{post.reportDate}}</td>
-            </tr>
-            <tr>
-                <ngx-charts-tree-map 
-                    class="chart-container" 
-                    [view]="[780,230]"
-                    [scheme]="portScheme" 
-                    [results]="post.portGroups"
-                    [tooltipDisabled]="false" 
-                    [animations]="false" 
-                    [valueFormatting]="portFormat">
-                </ngx-charts-tree-map>
-            </tr>
-            </td>
-        </tr>
+                <tr> 
+                    <td class="title">Top Four Fiscal Year 2019 Small Business Portfolio 
+                                      Group Spends as of {{post.reportDate}}
+                    </td>
+                </tr>
+                <tr>     
+                    <ngx-charts-tree-map 
+                        class="chart-container" 
+                        [view]="[780,230]"
+                        [scheme]="portScheme" 
+                        [results]="post.portGroups"
+                        [tooltipDisabled]="false" 
+                        [animations]="false" 
+                        [valueFormatting]="portFormat">
+                    </ngx-charts-tree-map>
+                </tr>
+            </td>  
+        </tr>    
     </table>
     <table>
         <tr>
@@ -92,4 +93,4 @@
             </ngx-charts-number-card>  
         </td>
     </table>
-</div>
+    </div>

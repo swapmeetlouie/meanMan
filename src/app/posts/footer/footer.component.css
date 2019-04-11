@@ -1,10 +1,19 @@
+/* Footer bootstrap settings  */
+.bg-foot  {
+    background-color: #024272 !important;
+    height: 45px;
+}
+
+/* Font-Awesome Chart setting */
 .fa-2x {
     vertical-align: middle;
+    padding-left: 20px;
     color: whitesmoke;
-    font-size: 50px !important;
+    font-size: 40px !important;
   }
   
-  #text {
+/* Text formatting  */
+#text {
     font-family: tahoma;
     padding-left: 10px;
     font-size: 13px;
@@ -14,4 +23,9 @@
     vertical-align: middle;
     display: inline-block;
     width: 1100px;
+  }
+
+/* Link formatting */
+a {
+    color: white !important;
   }
