@@ -1,6 +1,6 @@
 # DoN OSBP SB Data App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+Must use latest @swimlane for CSS chart changes to be reflected properly.
 
 ## Development server
 
