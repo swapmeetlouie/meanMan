@@ -8,6 +8,7 @@ const postsRoutes = require("./routes/posts");
 const app = express();
 
 mongoose
+// Local Mongo instance, will be replaced with MySQL 
   .connect("mongodb://localhost/navy")
   .then(() => {
     console.log("Connected to database!");
