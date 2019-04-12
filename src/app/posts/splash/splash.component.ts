@@ -1,9 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Post } from "../post.model";
-import { PostsService } from "../posts.service";
-import { majName } from '../data';
-
-
+import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-splash',
   templateUrl: './splash.component.html',
@@ -11,15 +6,6 @@ import { majName } from '../data';
   encapsulation: ViewEncapsulation.None
 })
 
-export class SplashComponent implements OnInit {
-  majCom: string;
-  constructor(
-    public postsService: PostsService
-  ) { 
-    this.majCom=majName;
-  }
-
-  ngOnInit() {
-  }
-
+export class SplashComponent {
+  constructor() {}
 }

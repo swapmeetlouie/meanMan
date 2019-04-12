@@ -30,12 +30,6 @@ export class MajcomComponent implements OnInit {
 ]},{ 'name': 'FY18', 'series': [ {'name': 'OTSB Products', 'desc': 'FY18 YTD', 'value': 1885.976938},{'name': 'OTSB Services', 'desc': 'FY18 YTD', 'value': 779.931457},{'name': 'SB Products', 'desc': 'FY18 YTD', 'value': 159.601471},{'name': 'SB Services', 'desc': 'FY18 YTD', 'value': 385.699457},
 ]},{ 'name': 'FY19', 'series': [ {'name': 'OTSB Products', 'desc': 'FY19 YTD', 'value': 1951.254336},{'name': 'OTSB Services', 'desc': 'FY19 YTD', 'value': 878.560032},{'name': 'SB Products', 'desc': 'FY19 YTD', 'value': 183.090613},{'name': 'SB Services', 'desc': 'FY19 YTD', 'value': 423.756270}]}]
 
-
-
-
-
-
-  
   post: Post;
   isLoading = false;
   public majCom: string;
@@ -77,7 +71,6 @@ export class MajcomComponent implements OnInit {
       return '$' + (v*1).toFixed(0) + 'M';
     }
   }
-
    
   // SB-OTSB Product-Service formatting
   treeFormat(value): string {
@@ -143,7 +136,6 @@ export class MajcomComponent implements OnInit {
              '#9b59b6'] // purple
   };
 
-
   ngOnInit() {
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       if (paramMap.has("majCom")) {
@@ -206,8 +198,7 @@ export class MajcomComponent implements OnInit {
                                   //  {'name': postData.portName5, 'value': postData.portValue5},
                                   //  {'name': postData.portName6, 'value': postData.portValue6},
                                   ]
-                      };      
-              // ;                                   
+                      };                                      
         });
 
       } else {
