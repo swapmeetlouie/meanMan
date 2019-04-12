@@ -16,13 +16,14 @@ body {
   background-color: white;
 }
 
+h5 {
+  font-weight: bold;
+}
+
 .back-image {
   background-image: url("/assets/img/NAVAIR-logo22.png");
   height: 100px;
 }
-/* table.back {
-  background-image: url("/assets/img/NAVAIR-logo.png");
-} */
 
 td.title {
   font-size: 15px !important;
@@ -30,13 +31,11 @@ td.title {
   font-weight: bold !important;
   position: relative !important;
   line-height: 16px !important;
-  /* top: 2px !important;  */
 }
 
 td.offset {
   position: absolute !important;
   left: 570.5px !important;
-  /* top: -5px !important; */
 }
 
 /* Total value format  */
@@ -107,8 +106,6 @@ background: white !important;
   padding-bottom: 20px !important;
   height: 30px !important;
   width: 30px !important;
-  /* color: white !important; */
-
 }
 
 .reading-label {
