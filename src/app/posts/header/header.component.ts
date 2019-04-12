@@ -1,10 +1,5 @@
-import { Component, Input, OnInit, ViewEncapsulation} from "@angular/core";
-// import { switchMap } from 'rxjs/operators';
-import {  ActivatedRoute } from "@angular/router";
-import { Post } from "../post.model";
-import { Observable } from "rxjs";
-import { dateData, majName } from '../data';
-
+import { Component, ViewEncapsulation} from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -14,28 +9,9 @@ import { dateData, majName } from '../data';
 })
 
 export class HeaderComponent {
-  dateData: string;
-  majCom: string;
-
-  post$: Observable<Post>;
-
-  post: Post[];
-  // majCom =post.majCom;
-  istrue = true;
-  isLoading = true;
-  // isLoading = true;
-  majComm = true;
-  // hoez = this.majCom; 
-
   constructor(
     public route: ActivatedRoute,
-  ) {
-    this.dateData=dateData;
-    this.majCom=majName;
-  }
-
+  ) {}
 
   ngOnInit() {}
-
   };
-
