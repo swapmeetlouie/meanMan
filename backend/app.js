@@ -33,7 +33,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// FY19 Table
+// API for FY19 Table
 app.use("/api/dash_fy19", postsRoutes);
 
 module.exports = app;
