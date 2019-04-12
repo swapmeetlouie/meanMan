@@ -10,11 +10,9 @@ const normalizePort = val => {
     // named pipe
     return val;
   }
-
   if (port >= 0) {
     return port;
   }
-
   return false;
 };
 
@@ -25,10 +23,9 @@ const onListening = () => {
 };
 
 // Dev API server port
-const port = normalizePort(process.env.PORT || "9876");
+const port = normalizePort(process.env.PORT || "9876"); 
 app.set("port", port);
 
 const server = http.createServer(app);
-// server.on("error", onError);
 server.on("listening", onListening);
 server.listen(port);
