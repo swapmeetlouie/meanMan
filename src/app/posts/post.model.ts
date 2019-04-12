@@ -1,3 +1,4 @@
+// Post model, including Objects 
 export class Post {
   id: string;
   majCom: string;
@@ -6,7 +7,7 @@ export class Post {
   sbSpend: number;
   otsbSpend: number;
   percSb: number;
-  spendBreak: object; 
+  spendBreak: object; // Object for use in ngx-charts
   goalSb: number;
   maxSb: number; 
   percSdb: number;
@@ -21,8 +22,8 @@ export class Post {
   percHubzone: number;
   goalHubzone: number;
   maxHubzone: number;
-  cardColor: object; 
-  cardSpend: object;
+  cardColor: object; // Object for use in ngx-charts
+  cardSpend: object; // Object for use in ngx-charts
   sdbSpend: number;
   sdvoSpend: number;
   wosbSpend: number;
@@ -44,6 +45,6 @@ export class Post {
   portValue5: number;
   portName6: string;
   portValue6: number;
-  portGroups: object;
+  portGroups: object; // Object for use in ngx-charts
 };
 
