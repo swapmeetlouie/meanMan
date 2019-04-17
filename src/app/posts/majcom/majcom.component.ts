@@ -25,10 +25,10 @@ export class MajcomComponent implements OnInit {
   // Gauge setting for ngx-gauge 
   gaugeSize='235';
 
-  breakAward = [ { 'name': 'FY16', 'series': [ {'name': 'OTSB Products', 'desc': 'FY16 YTD', 'value': 1687.164012},{'name': 'OTSB Services', 'desc': 'FY16 YTD', 'value': 985.738968},{'name': 'SB Products', 'desc': 'FY16 YTD', 'value': 157.407110},{'name': 'SB Services', 'desc': 'FY16 YTD', 'value': 435.915357},
-]},{ 'name': 'FY17', 'series': [ {'name': 'OTSB Products', 'desc': 'FY17 YTD', 'value': 1630.877999},{'name': 'OTSB Services', 'desc': 'FY17 YTD', 'value': 738.550426},{'name': 'SB Products', 'desc': 'FY17 YTD', 'value': 160.669202},{'name': 'SB Services', 'desc': 'FY17 YTD', 'value': 374.059644},
-]},{ 'name': 'FY18', 'series': [ {'name': 'OTSB Products', 'desc': 'FY18 YTD', 'value': 1885.976938},{'name': 'OTSB Services', 'desc': 'FY18 YTD', 'value': 779.931457},{'name': 'SB Products', 'desc': 'FY18 YTD', 'value': 159.601471},{'name': 'SB Services', 'desc': 'FY18 YTD', 'value': 385.699457},
-]},{ 'name': 'FY19', 'series': [ {'name': 'OTSB Products', 'desc': 'FY19 YTD', 'value': 1951.254336},{'name': 'OTSB Services', 'desc': 'FY19 YTD', 'value': 878.560032},{'name': 'SB Products', 'desc': 'FY19 YTD', 'value': 183.090613},{'name': 'SB Services', 'desc': 'FY19 YTD', 'value': 423.756270}]}]
+//   breakAward = [ { 'name': 'FY16', 'series': [ {'name': 'OTSB Products', 'desc': 'FY16 YTD', 'value': 1687.164012},{'name': 'OTSB Services', 'desc': 'FY16 YTD', 'value': 985.738968},{'name': 'SB Products', 'desc': 'FY16 YTD', 'value': 157.407110},{'name': 'SB Services', 'desc': 'FY16 YTD', 'value': 435.915357},
+// ]},{ 'name': 'FY17', 'series': [ {'name': 'OTSB Products', 'desc': 'FY17 YTD', 'value': 1630.877999},{'name': 'OTSB Services', 'desc': 'FY17 YTD', 'value': 738.550426},{'name': 'SB Products', 'desc': 'FY17 YTD', 'value': 160.669202},{'name': 'SB Services', 'desc': 'FY17 YTD', 'value': 374.059644},
+// ]},{ 'name': 'FY18', 'series': [ {'name': 'OTSB Products', 'desc': 'FY18 YTD', 'value': 1885.976938},{'name': 'OTSB Services', 'desc': 'FY18 YTD', 'value': 779.931457},{'name': 'SB Products', 'desc': 'FY18 YTD', 'value': 159.601471},{'name': 'SB Services', 'desc': 'FY18 YTD', 'value': 385.699457},
+// ]},{ 'name': 'FY19', 'series': [ {'name': 'OTSB Products', 'desc': 'FY19 YTD', 'value': 1951.254336},{'name': 'OTSB Services', 'desc': 'FY19 YTD', 'value': 878.560032},{'name': 'SB Products', 'desc': 'FY19 YTD', 'value': 183.090613},{'name': 'SB Services', 'desc': 'FY19 YTD', 'value': 423.756270}]}]
 
   post: Post;
   isLoading = false;
@@ -197,9 +197,51 @@ export class MajcomComponent implements OnInit {
                                    {'name': postData.portName4, 'value': postData.portValue4},
                                   //  {'name': postData.portName5, 'value': postData.portValue5},
                                   //  {'name': postData.portName6, 'value': postData.portValue6},
-                                  ]
-                      };                                      
-        });
+                                  ],
+                      otsbProd_16: postData.otsbProd_16,
+                      otsbServ_16: postData.otsbServ_16,
+                      sbProd_16: postData.sbProd_16,
+                      sbServ_16: postData.sbServ_16,
+                      otsbProd_17: postData.otsbProd_17,
+                      otsbServ_17: postData.otsbServ_17,
+                      sbProd_17: postData.sbProd_17,
+                      sbServ_17: postData.sbServ_17,
+                      otsbProd_18: postData.otsbProd_18,
+                      otsbServ_18: postData.otsbServ_18,
+                      sbProd_18: postData.sbProd_18,
+                      sbServ_18: postData.sbServ_18,
+                      otsbProd_19: postData.otsbProd_19,
+                      otsbServ_19: postData.otsbServ_19,
+                      sbProd_19: postData.sbProd_19,
+                      sbServ_19: postData.sbServ_19,
+                      breakAward: [ 
+                        {'name': 'FY16', 'series': [
+                          {'name': 'OTSB Products', 'desc': 'FY16 YTD', 'value': postData.otsbProd_16},
+                          {'name': 'OTSB Services', 'desc': 'FY16 YTD', 'value': postData.otsbServ_16},
+                          {'name': 'SB Products', 'desc': 'FY16 YTD', 'value': postData.sbProd_16},
+                          {'name': 'SB Services', 'desc': 'FY16 YTD', 'value': postData.sbServ_16}
+                        ]},
+                        {'name': 'FY17', 'series': [
+                          {'name': 'OTSB Products', 'desc': 'FY17 YTD', 'value': postData.otsbProd_17},
+                          {'name': 'OTSB Services', 'desc': 'FY17 YTD', 'value': postData.otsbServ_17},
+                          {'name': 'SB Products', 'desc': 'FY17 YTD', 'value': postData.sbProd_17},
+                          {'name': 'SB Services', 'desc': 'FY17 YTD', 'value': postData.sbServ_17}
+                        ]},
+                        {'name': 'FY18', 'series': [
+                          {'name': 'OTSB Products', 'desc': 'FY18 YTD', 'value': postData.otsbProd_18},
+                          {'name': 'OTSB Services', 'desc': 'FY18 YTD', 'value': postData.otsbServ_18},
+                          {'name': 'SB Products', 'desc': 'FY18 YTD', 'value': postData.sbProd_18},
+                          {'name': 'SB Services', 'desc': 'FY18 YTD', 'value': postData.sbServ_18}
+                        ]},
+                        {'name': 'FY19', 'series': [
+                          {'name': 'OTSB Products', 'desc': 'FY19 YTD', 'value': postData.otsbProd_19},
+                          {'name': 'OTSB Services', 'desc': 'FY19 YTD', 'value': postData.otsbServ_19},
+                          {'name': 'SB Products', 'desc': 'FY19 YTD', 'value': postData.sbProd_19},
+                          {'name': 'SB Services', 'desc': 'FY19 YTD', 'value': postData.sbServ_19}
+                        ]}
+                      ]                                   
+        }
+      });
 
       } else {
         this.majCom = null;

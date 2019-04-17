@@ -44,6 +44,22 @@ const majSchema = mongoose.Schema({
   portValue5: { type: Number },
   portName6: { type: String },
   portValue6: { type: Number },
+  otsbProd_16: { type: Number },
+  otsbServ_16: { type: Number },
+  sbProd_16: { type: Number },
+  sbServ_16: { type: Number },
+  otsbProd_17: { type: Number },
+  otsbServ_17: { type: Number },
+  sbProd_17: { type: Number },
+  sbServ_17: { type: Number },
+  otsbProd_18: { type: Number },
+  otsbServ_18: { type: Number },
+  sbProd_18: { type: Number },
+  sbServ_18: { type: Number },
+  otsbProd_19: { type: Number },
+  otsbServ_19: { type: Number },
+  sbProd_19: { type: Number },
+  sbServ_19: { type: Number },
   }
 })
 

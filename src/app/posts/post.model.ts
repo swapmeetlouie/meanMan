@@ -46,5 +46,22 @@ export class Post {
   portName6: string;
   portValue6: number;
   portGroups: object; // Object for use in ngx-charts
+  otsbProd_16: number;
+  otsbServ_16: number;
+  sbProd_16: number;
+  sbServ_16: number;
+  otsbProd_17: number;
+  otsbServ_17: number;
+  sbProd_17: number;
+  sbServ_17: number;
+  otsbProd_18: number;
+  otsbServ_18: number;
+  sbProd_18: number;
+  sbServ_18: number;
+  otsbProd_19: number;
+  otsbServ_19: number;
+  sbProd_19: number;
+  sbServ_19: number;
+  breakAward: object; // Object for use in ngx-charts
 };
 
