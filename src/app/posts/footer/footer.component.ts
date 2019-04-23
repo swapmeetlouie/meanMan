@@ -9,7 +9,7 @@ import {  ActivatedRoute } from "@angular/router";
 })
 
 export class FooterComponent implements OnInit {
-  datePrint = '03 April 2019';
+  datePrint = '17 April 2019';
   constructor(
     public route: ActivatedRoute,
   ) { }
