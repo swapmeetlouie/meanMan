@@ -22,6 +22,10 @@ import { NgxGaugeModule } from 'ngx-gauge';
 
 export class MajcomComponent implements OnInit {
 
+  printPage() {
+    window.print();
+  }
+
   // Gauge setting for ngx-gauge 
   gaugeSize='235';
 
