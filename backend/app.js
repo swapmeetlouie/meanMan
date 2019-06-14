@@ -10,7 +10,8 @@ const app = express();
 
 mongoose
 // Local Mongo instance, will be replaced with MySQL and later DB2
-  .connect("mongodb://localhost/navy")
+  .connect("mongodb://localhost/navy", 
+        {useNewUrlParser: true}) // Removes annoying DepreciationWarning
   .then(() => {
     console.log("Connected to database!");
   })
