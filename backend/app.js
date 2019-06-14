@@ -13,7 +13,7 @@ mongoose
   .connect("mongodb://localhost/navy", 
         {useNewUrlParser: true}) // Removes annoying DepreciationWarning
   .then(() => {
-    console.log("Connected to database!");
+    console.log("MongoDB connection working.");
   })
   .catch(() => {
     console.log("Connection failed!");
