@@ -25,6 +25,7 @@
     "@angular/router": "^6.0.0",
     "@fortawesome/fontawesome-free": "^5.8.1",
     "@swimlane/ngx-charts": "^10.1.0",
+    "angular-us-map": "^1.2.0",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
@@ -33,6 +34,7 @@
     "jquery": "^3.3.1",
     "mongoose": "^5.1.2",
     "ngx-gauge": "^1.0.0-beta.7",
+    "ngx-print": "^1.2.0-beta.2",
     "popper.js": "^1.14.7",
     "rxjs": "6.3.3",
     "zone.js": "^0.8.26"

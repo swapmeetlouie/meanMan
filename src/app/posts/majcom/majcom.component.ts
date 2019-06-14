@@ -5,6 +5,7 @@ import { Post } from "../post.model";
 import { PostsService } from "../posts.service";
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NgxGaugeModule } from 'ngx-gauge';
+import { NgxPrintModule } from 'ngx-print';
 
 @Component({
   selector: 'app-majcom',
@@ -16,15 +17,16 @@ import { NgxGaugeModule } from 'ngx-gauge';
 @NgModule({
   imports: [
     NgxChartsModule,
-    NgxGaugeModule
+    NgxGaugeModule,
+    NgxPrintModule
    ]
 })
 
 export class MajcomComponent implements OnInit {
 
-  printPage() {
-    window.print();
-  }
+  // printPage() {
+  //   window.print();
+  // }
 
   // Gauge setting for ngx-gauge 
   gaugeSize='235';
@@ -40,7 +42,7 @@ export class MajcomComponent implements OnInit {
 
   constructor(
     public postsService: PostsService,
-    public route: ActivatedRoute,
+    public route: ActivatedRoute
   ) {}
 
   // Percentage breakdowns for advanced pie chart 
@@ -79,7 +81,7 @@ export class MajcomComponent implements OnInit {
   // SB-OTSB Product-Service formatting
   treeFormat(value): string {
     const bil = value;
-    if (bil>10000) {
+    if (bil>=10000) {
       return '$' + (bil / 1000).toFixed(0) + 'B';
     }
     else if (bil<2000 && bil>1000) {
@@ -92,8 +94,9 @@ export class MajcomComponent implements OnInit {
               bil == 3000 || bil == 4000 ||
               bil == 5000 || bil == 6000 ||
               bil == 7000 || bil == 8000 ||
-              bil == 9000) 
-          && bil < 10000)  {
+              bil == 9000) )
+          // && bil < 10000) 
+           {
       return '$' + (bil/1000).toFixed(0) + 'B';
     } else {
       return '$' + (bil / 1000).toFixed(1) + 'B';

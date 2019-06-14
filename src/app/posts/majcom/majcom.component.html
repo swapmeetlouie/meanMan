@@ -1,4 +1,4 @@
-<div *ngIf="post">
+<div id="test" *ngIf="post">
     <img src="assets/img/{{post.majCom}}-logo.png" height="120">     
         <!-- <button (click)="printPage()">Print</button>   -->
         <h5><u>Fiscal Year 2019 FPDS-NG Data as of {{post.reportDate}}</u></h5>
@@ -23,7 +23,7 @@
                 <tr>     
                     <ngx-charts-tree-map 
                         class="chart-container" 
-                        [view]="[780,230]"
+                        [view]="[805,230]"
                         [scheme]="portScheme" 
                         [results]="post.portGroups"
                         [tooltipDisabled]="false" 
@@ -96,3 +96,8 @@
         </td>
     </table>
 </div>
+<button 
+[useExistingCss]="true"
+    printTitle="{{post.majCom}}"
+    printSectionId="test" 
+    ngxPrint>print</button> 
