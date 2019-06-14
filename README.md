@@ -24,12 +24,12 @@ If Port 4200 is already in use specify the port you would like to use in the fol
 ```
 ng serve --port XXXX
 ```
-## Development Notes
+#### Development Notes
 
 Development application is using MongoDB-Mongoose backend but OMB Max based application will use IBM Db2 OData service.  During development MySQL was used initially but was replaced with MongoDB to ensure ngx-charts visualizations would render correctly without needing additional libraries.  
 
-### Development Server Details
-
+##### Development Server Details
+```
 Visual Studio Code: 1.35.x
 Chrome: 66.0.x
 V8: 6.6.x
@@ -37,3 +37,4 @@ Firefox: 67.0.x
 Node.js: 10.2.x
 MongoDB 3.6.x 
 OS: Ubuntu 18.04.x LTS
+```
