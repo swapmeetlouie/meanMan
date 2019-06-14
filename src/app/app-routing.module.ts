@@ -2,7 +2,6 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { MajcomComponent } from "./posts/majcom/majcom.component";
 import { SplashComponent } from "./posts/splash/splash.component";
-import { MapComponent } from './posts/map/map.component';
 // import { PrintPageComponent } from './posts/print-page/print-page.component';
 
 
@@ -12,7 +11,7 @@ const routes: Routes = [
   { path: 'performance', component: SplashComponent },
   { path: 'sb_dash_fy19/:majCom', component: MajcomComponent },
   // { path: 'map', redirectTo: '/spendMaps', pathMatch: 'full'},
-  { path: 'spendMaps', component: MapComponent },
+  // { path: 'spendMaps', component: MapComponent },
   // { path: 'print',  outlet: 'print',  component: PrintDashComponent,
   //   children: [
   //     {path: 'sb_dash_fy19/:majCom', component: MajcomComponent}

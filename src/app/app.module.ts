@@ -21,7 +21,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { MajcomComponent } from './posts/majcom/majcom.component';
 import { FooterComponent } from './posts/footer/footer.component';
 import { SplashComponent } from './posts/splash/splash.component';
-import { SlMapModule } from './posts/s-map.module';
 import { NgxPrintModule } from 'ngx-print';
 
 @NgModule({
@@ -46,7 +45,6 @@ import { NgxPrintModule } from 'ngx-print';
     NgxChartsModule,
     NgxGaugeModule,
     HttpClientModule,
-    SlMapModule,
     NgxPrintModule
   ],
   providers: [],
