@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
-import { Post } from "./post.model";
+import { Post, Goal } from "./post.model";
 @Injectable({ providedIn: "root" }) // Setup server instance 
 
 export class PostsService {
@@ -45,4 +45,72 @@ export class PostsService {
       "http://localhost:9876/api/dash_fy19/" + majCom // Development API location 
     );
   }
-}
+  public goal: Goal[] = []; // Empty array 
+
+  getGoal(majCom: string) { // Retrieval of dashboard data
+    return this.http.get<{ id: string; 
+      importDt: string;
+      majCom: string; totalSpend: number;  
+      sbSpend: number;
+      sbPerc: number;  sbGoal: number;
+      sbStatus: string;
+      sbColor: string;
+      sdbSpend: number;
+      sdbPerc: number;
+      sdbGoal: number;
+      sdbStatus: string;
+      sdbColor: string;
+      sdvoSpend: number;
+      sdvoPerc: number;
+      sdvoGoal: number;
+      sdvoStatus: string;
+      sdvoColor: string;
+      wosbSpend: number;
+      wosbPerc: number;
+      wosbGoal: number;
+      wosbStatus: string;
+      wosbColor: string;
+      hubzoneSpend: number;
+      hubzonePerc: number;
+      hubzoneGoal: number;
+      hubzoneStatus: string;
+      hubzoneColor: string;
+      }>(
+        "http://localhost:9876/api/goal_fy19/" + majCom // Development API location 
+      );
+    }};
+
+
+// };
+
+// export class GoalsService {
+
+//   constructor(private http: HttpClient, private router: Router) {}
+
+//   public goal: Goal[] = []; // Empty array 
+
+//   getGoal(majCom: string) { // Retrieval of dashboard data
+//     return this.http.get<{ id: string; majCom: string; totalSpend: number;  
+//       sbSpend: number;
+//       sbPerc: number;  sbGoal: number;
+//       sbStatus: string;
+//       sdbSpend: number;
+//       sdbPerc: number;
+//       sdbGoal: number;
+//       sdbStatus: string;
+//       sdvoSpend: number;
+//       sdvoPerc: number;
+//       sdvoGoal: number;
+//       sdvoStatus: string;
+//       wosbSpend: number;
+//       wosbPerc: number;
+//       wosbGoal: number;
+//       wosbStatus: string;
+//       hubzoneSpend: number;
+//       hubzonePerc: number;
+//       hubzoneGoal: number;
+//       hubzoneStatus: string;
+//       }>(
+//         "http://localhost:9876/api/goal_fy19/" + majCom // Development API location 
+//       );
+//     }};

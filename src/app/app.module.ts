@@ -22,6 +22,7 @@ import { MajcomComponent } from './posts/majcom/majcom.component';
 import { FooterComponent } from './posts/footer/footer.component';
 import { SplashComponent } from './posts/splash/splash.component';
 import { NgxPrintModule } from 'ngx-print';
+import { SumTabComponent } from './posts/sum-tab/sum-tab.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NgxPrintModule } from 'ngx-print';
     HeaderComponent,
     MajcomComponent,
     FooterComponent,
-    SplashComponent
+    SplashComponent,
+    SumTabComponent
   ],
   imports: [
     BrowserModule,

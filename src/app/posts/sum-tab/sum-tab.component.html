@@ -1,0 +1,173 @@
+<div id="test" *ngIf="goal">
+    <img src="assets/img/{{goal.majCom}}-logo.png" height="120">     
+        <!-- <button (click)="printPage()">Print</button>   -->
+        <h5><u>Year-to-Date Fiscal Year Awarding Data as of {{goal.importDt}}</u></h5>
+        <table id="goals">
+            <tr>         
+                <th colspan="2">Award Area</th>
+                <th>FY2019</th>
+                <th>FY2016-2018 Average</th>
+                <th>FY2019 Trend</th>
+            </tr>
+            <!-- Total Awards -->
+            <tr class="bottom">
+                <td>Total Awards</td>
+                <td>Year-to-Date</td>
+            <!-- </tr>    
+            <tr> -->
+                <td>{{ goal.totalSpend | currency: 'USD': true: '2.0-0' }} </td>
+                <td>{{ goal.totalSpend | currency: 'USD': true: '2.0-0' }} </td>
+                <td>{{ goal.totalSpend | currency: 'USD': true: '2.0-0' }} </td>
+            </tr>        
+             <!-- Small Business  -->
+            <tr>
+                <td colspan="1" rowspan="5" id="title">Small Business</td>
+            </tr>
+            <tr>
+                <td>Year-to-Date</td>
+                <td>{{ goal.sbSpend | currency: 'USD': true: '2.0-0' }}</td>
+                <td>{{ goal.sbSpend | currency: 'USD': true: '2.0-0' }}</td>
+                <td>{{ goal.sbSpend | currency: 'USD': true: '2.0-0' }}</td>
+            </tr>
+            <tr>
+                <td>SB %</td>
+                <td>{{ goal.sbPerc | percent: '1.2-2' }}</td>
+                <td>{{ goal.sbPerc | percent: '1.2-2' }}</td>
+                <td>{{ goal.sbPerc | percent: '1.2-2' }}</td>
+            </tr>
+            <tr>
+                <td>SB Goal</td>
+                <td>{{ goal.sbGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.sbGoal }}</td>
+                <td>{{ goal.sbGoal }}</td>
+            </tr>
+            <tr class="bottom">
+                <td>SB Goal Status</td>
+                <td class={{goal.sbColor}}>{{ goal.sbStatus }}</td>
+                <td class={{goal.sbColor}}>{{ goal.sbStatus }}</td>
+                <td class={{goal.sbColor}}>{{ goal.sbStatus }}</td>
+            </tr>
+
+            <!-- Small Disadvantaged Business  -->
+            <tr>
+            <td colspan="1" rowspan="5">Small Disadvantage</td>
+            </tr>
+            <tr>
+                <td>Year-to-Date</td>
+                <td>{{ goal.sdbSpend | currency: 'USD': true: '2.0-0' }}</td>
+                <td>{{ goal.sdbSpend | currency: 'USD': true: '2.0-0' }}</td>
+                <td>{{ goal.sdbSpend | currency: 'USD': true: '2.0-0' }}</td>
+            </tr>
+            <tr>
+                <td>SDB %</td>
+                <td>{{ goal.sdbPerc | percent: '1.2-2' }}</td>
+                <td>{{ goal.sdbPerc | percent: '1.2-2' }}</td>
+                <td>{{ goal.sdbPerc | percent: '1.2-2' }}</td>
+            </tr>
+            <tr>
+                <td>SDB Goal</td>
+                <td>{{ goal.sdbGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.sdbGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.sdbGoal | percent: '1.2-2' }}</td>
+            </tr>
+            <tr class="bottom">
+                <td>SDB Goal Status</td>
+                <td class={{goal.sdbColor}}>{{ goal.sdbStatus }}</td>
+                <td class={{goal.sdbColor}}>{{ goal.sdbStatus }}</td>
+                <td class={{goal.sdbColor}}>{{ goal.sdbStatus }}</td>
+            </tr>
+            <!-- SDVO  -->
+            <tr>
+            <td colspan="1" rowspan="5">Service-Disabled</td>
+            </tr>
+            <tr>
+                <td>Year-to-Date</td>
+                <td>{{ goal.sdvoSpend | currency: 'USD': true: '2.0-0'}}</td>
+                <td>{{ goal.sdvoSpend | currency: 'USD': true: '2.0-0'}}</td>
+                <td>{{ goal.sdvoSpend | currency: 'USD': true: '2.0-0'}}</td>
+            </tr>
+            <tr>
+                <td>SDVO %</td>
+                <td>{{ goal.sdvoPerc | percent: '1.2-2' }}</td>
+                <td>{{ goal.sdvoPerc | percent: '1.2-2' }}</td>
+                <td>{{ goal.sdvoPerc | percent: '1.2-2' }}</td>
+            </tr>
+            <tr>
+                <td>SDVO Goal</td>
+                <td>{{ goal.sdvoGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.sdvoGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.sdvoGoal | percent: '1.2-2' }}</td>
+            </tr>
+            <tr class="bottom">
+                <td>SDVO Goal Status</td>
+                <td class={{goal.sdvoColor}}>{{ goal.sdvoStatus }}</td>
+                <td class={{goal.sdvoColor}}>{{ goal.sdvoStatus }}</td>
+                <td class={{goal.sdvoColor}}>{{ goal.sdvoStatus }}</td>
+             </tr>
+            <!-- WOSB  -->
+            <tr>
+            <td colspan="1" rowspan="5">WOSB</td>
+            </tr>
+            <tr>
+                <td>Year-to-Date</td>
+                <td>{{ goal.wosbSpend | currency: 'USD': true: '2.0-0' }}</td>
+                <td>{{ goal.wosbSpend | currency: 'USD': true: '2.0-0' }}</td>
+                <td>{{ goal.wosbSpend | currency: 'USD': true: '2.0-0' }}</td>
+            </tr>
+            <tr>
+                <td>WOSB %</td>
+                <td>{{ goal.wosbPerc | percent: '1.2-2'}}</td>
+                <td>{{ goal.wosbPerc | percent: '1.2-2'}}</td>
+                <td>{{ goal.wosbPerc | percent: '1.2-2'}}</td>
+            </tr>
+            <tr>
+                <td>WOSB Goal</td>
+                <td>{{ goal.wosbGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.wosbGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.wosbGoal | percent: '1.2-2' }}</td>
+            </tr>
+            <tr class="bottom">
+                <td>WOSB Goal Status</td>
+                <td class={{goal.wosbColor}}>{{ goal.wosbStatus }}</td>
+                <td class={{goal.wosbColor}}>{{ goal.wosbStatus }}</td>
+                <td class={{goal.wosbColor}}>{{ goal.wosbStatus }}</td>
+            </tr>
+            <!-- HUBZone  -->
+            <tr>
+            <td colspan="1" rowspan="5">HUBZone</td>
+            </tr>
+            <tr>
+                <td>Year-to-Date</td>
+                <td>{{ goal.hubzoneSpend | currency: 'USD': true: '2.0-0'}}</td>
+                <td>{{ goal.hubzoneSpend | currency: 'USD': true: '2.0-0'}}</td>
+                <td>{{ goal.hubzoneSpend | currency: 'USD': true: '2.0-0'}}</td>
+            </tr>
+            <tr>
+                <td>HUBZone %</td>
+                <td>{{ goal.hubzonePerc | percent: '1.2-2' }}</td>
+                <td>{{ goal.hubzonePerc | percent: '1.2-2' }}</td>
+                <td>{{ goal.hubzonePerc | percent: '1.2-2' }}</td>
+            </tr>
+            <tr>
+                <td>HUBZone Goal</td>
+                <td>{{ goal.hubzoneGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.hubzoneGoal | percent: '1.2-2' }}</td>
+                <td>{{ goal.hubzoneGoal | percent: '1.2-2' }}</td>
+            </tr>
+            <tr class="bottom">
+                <td>HUBZone Goal Status</td>
+                <td class={{goal.hubzoneColor}}>{{ goal.hubzoneStatus }}</td>
+                <td class={{goal.hubzoneColor}}>{{ goal.hubzoneStatus }}</td>
+                <td class={{goal.hubzoneColor}}>{{ goal.hubzoneStatus }}</td>
+            </tr>
+        <!-- HUBZone  -->
+            <tr>
+                <td colspan="2">Goals Met</td>
+                <td class="meet">5</td>
+                <td class={{goal.numMetAvg}}>2</td>
+                <td class="{{goal.numMetProj}}">Should Meet All</td>
+            </tr>
+        </table>
+   <br>
+</div>
+

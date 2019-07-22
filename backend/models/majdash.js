@@ -61,7 +61,7 @@ const majSchema = mongoose.Schema({
   sbProd_19: { type: Number },
   sbServ_19: { type: Number },
   }
-})
+});
 
 // MongoDB collection defined
 module.exports = mongoose.model('dash_fy19', majSchema);

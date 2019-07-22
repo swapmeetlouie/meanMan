@@ -2,6 +2,7 @@
 .bg-foot  {
     background-color: #024272 !important;
     height: 45px;
+    position: relative;
 }
 
 /* Font-Awesome Chart setting */

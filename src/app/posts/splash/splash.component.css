@@ -12,7 +12,7 @@ body {
   text-align: center !important;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px !important;
+  font-size: 18px !important;
   color:black;
   background-color: white;
 }
@@ -21,3 +21,11 @@ body {
 .fa-square {
   color: #024272;
 } 
+
+td {
+  padding-right: 30px;
+}
+
+td.spacer {
+  padding-left: 44px;
+}

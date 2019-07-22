@@ -1,0 +1,71 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+/* @import "~font-awesome/css/font-awesome.css"; */
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+body {
+  /* height: 50px !important; */
+  font-family: tahoma !important; 
+  vertical-align: center !important;
+  margin: 0;
+  padding-top: 100px !important;
+  /* padding-bottom: 20px !important; */
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px !important;
+  color:black;
+  background-color: white;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 28px !important;
+}
+
+#goals  {
+  width: 1100px !important;
+  height: 630px !important;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black !important;
+  /* padding: 10px !important;  */
+}
+
+#goals th {
+  background-color: #024272;
+  border-bottom: 2px solid black !important;
+  color: white !important;
+  }
+
+tr.bottom {
+  border-bottom: 2px solid black !important; 
+}
+
+td.right {
+  border-right: 2px solid black !important;
+}
+
+td.allmet {
+  background-color: #17500b;
+}
+
+td.fourmet {
+  background-color: #47a434;
+}
+
+td.meet {
+  background-color: #54b577; 
+}
+
+td.within {
+  background-color: #f0ed55; 
+}
+
+td.ten {
+  background-color: orange; 
+}
+
+td.twenty {
+  background-color: #b01d31; 
+  color: white; 
+}

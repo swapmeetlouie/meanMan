@@ -65,3 +65,34 @@ export class Post {
   breakAward: object; // Object for use in ngx-charts
 };
 
+export class Goal {
+  id: string;
+  importDt: string;
+  majCom: string;
+  totalSpend: number;
+  sbSpend: number;
+  sbPerc: number;
+  sbGoal: number;
+  sbStatus: string;
+  sbColor: string;
+  sdbSpend: number;
+  sdbPerc: number;
+  sdbGoal: number;
+  sdbStatus: string;
+  sdbColor: string;
+  sdvoSpend: number;
+  sdvoPerc: number;
+  sdvoGoal: number;
+  sdvoStatus: string;
+  sdvoColor: string;
+  wosbSpend: number;
+  wosbPerc: number;
+  wosbGoal: number;
+  wosbStatus: string;
+  wosbColor: string;
+  hubzoneSpend: number;
+  hubzonePerc: number;
+  hubzoneGoal: number;
+  hubzoneStatus: string; 
+  hubzoneColor: string;
+};
