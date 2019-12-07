@@ -10,7 +10,7 @@ import { SumTabComponent } from "./posts/sum-tab/sum-tab.component";
 const routes: Routes = [
   { path: '', redirectTo: '/performance', pathMatch: 'full' },
   { path: 'performance', component: SplashComponent },
-  { path: 'sb_dash_fy19/:majCom', component: MajcomComponent },
+  { path: 'sb_dash_fy20/:majCom', component: MajcomComponent },
   { path: 'sumTab/:majCom', component: SumTabComponent },
   // { path: 'map', redirectTo: '/spendMaps', pathMatch: 'full'},
   // { path: 'spendMaps', component: MapComponent },

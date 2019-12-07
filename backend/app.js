@@ -40,7 +40,7 @@ app.use((req, res, next) => {
 });
 
 // API for FY19 Table
-app.use("/api/dash_fy19", postsRoutes);
-app.use("/api/goal_fy19", goalsRoutes);
+app.use("/api/dash_fy20", postsRoutes);
+app.use("/api/goal_fy20", goalsRoutes);
 
 module.exports = app;

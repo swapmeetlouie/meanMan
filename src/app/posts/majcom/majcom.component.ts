@@ -205,10 +205,10 @@ export class MajcomComponent implements OnInit {
                                   //  {'name': postData.portName5, 'value': postData.portValue5},
                                   //  {'name': postData.portName6, 'value': postData.portValue6},
                                   ],
-                      otsbProd_16: postData.otsbProd_16,
-                      otsbServ_16: postData.otsbServ_16,
-                      sbProd_16: postData.sbProd_16,
-                      sbServ_16: postData.sbServ_16,
+                      // otsbProd_16: postData.otsbProd_16,
+                      // otsbServ_16: postData.otsbServ_16,
+                      // sbProd_16: postData.sbProd_16,
+                      // sbServ_16: postData.sbServ_16,
                       otsbProd_17: postData.otsbProd_17,
                       otsbServ_17: postData.otsbServ_17,
                       sbProd_17: postData.sbProd_17,
@@ -221,13 +221,17 @@ export class MajcomComponent implements OnInit {
                       otsbServ_19: postData.otsbServ_19,
                       sbProd_19: postData.sbProd_19,
                       sbServ_19: postData.sbServ_19,
+                      otsbProd_20: postData.otsbProd_20,
+                      otsbServ_20: postData.otsbServ_20,
+                      sbProd_20: postData.sbProd_20,
+                      sbServ_20: postData.sbServ_20,
                       breakAward: [ 
-                        {'name': 'FY16', 'series': [
-                          {'name': 'OTSB Products', 'desc': 'FY16 YTD', 'value': postData.otsbProd_16},
-                          {'name': 'OTSB Services', 'desc': 'FY16 YTD', 'value': postData.otsbServ_16},
-                          {'name': 'SB Products', 'desc': 'FY16 YTD', 'value': postData.sbProd_16},
-                          {'name': 'SB Services', 'desc': 'FY16 YTD', 'value': postData.sbServ_16}
-                        ]},
+                        // {'name': 'FY16', 'series': [
+                        //   {'name': 'OTSB Products', 'desc': 'FY16 YTD', 'value': postData.otsbProd_16},
+                        //   {'name': 'OTSB Services', 'desc': 'FY16 YTD', 'value': postData.otsbServ_16},
+                        //   {'name': 'SB Products', 'desc': 'FY16 YTD', 'value': postData.sbProd_16},
+                        //   {'name': 'SB Services', 'desc': 'FY16 YTD', 'value': postData.sbServ_16}
+                        // ]},
                         {'name': 'FY17', 'series': [
                           {'name': 'OTSB Products', 'desc': 'FY17 YTD', 'value': postData.otsbProd_17},
                           {'name': 'OTSB Services', 'desc': 'FY17 YTD', 'value': postData.otsbServ_17},
@@ -245,6 +249,12 @@ export class MajcomComponent implements OnInit {
                           {'name': 'OTSB Services', 'desc': 'FY19 YTD', 'value': postData.otsbServ_19},
                           {'name': 'SB Products', 'desc': 'FY19 YTD', 'value': postData.sbProd_19},
                           {'name': 'SB Services', 'desc': 'FY19 YTD', 'value': postData.sbServ_19}
+                        ]},
+                        {'name': 'FY20', 'series': [
+                          {'name': 'OTSB Products', 'desc': 'FY20 YTD', 'value': postData.otsbProd_20},
+                          {'name': 'OTSB Services', 'desc': 'FY20 YTD', 'value': postData.otsbServ_20},
+                          {'name': 'SB Products', 'desc': 'FY20 YTD', 'value': postData.sbProd_20},
+                          {'name': 'SB Services', 'desc': 'FY20 YTD', 'value': postData.sbServ_20}
                         ]}
                       ]                                   
         }

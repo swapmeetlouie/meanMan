@@ -3,7 +3,7 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 body {
-  height: 750px !important;
+  height: 950px !important;
   font-family: tahoma !important; 
   vertical-align: left;
   margin: 0;
@@ -25,9 +25,21 @@ h5 {
   height: 100px;
 }
 
+td.logo {
+  position: relative !important;
+  padding-left: 180px;  
+}
+
+td.date {
+  padding-left:150px;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
 td.title {
   font-size: 15px !important;
   padding: 0px !important;
+  /* padding-top: 12px !important; */
   font-weight: bold !important;
   position: relative !important;
   line-height: 16px !important;
@@ -37,6 +49,40 @@ td.offset {
   position: absolute !important;
   left: 570.5px !important;
 }
+
+/* div.container {
+  width: 700px !important;
+} */
+
+/* .advanced-pie {
+  width: 300px !important;
+}
+*/
+ /* .pie-chart-container {
+  height: 300px; 
+  width: 10% !important;
+  min-width: 300px; 
+  display: block;
+  background: #999;
+}   */
+
+
+/* .advanced-pie-legend {
+  width: 400px !important;
+} */
+
+/* .advanced-pie-chart {
+  width: 600px !important;
+} */
+/*
+ .advanced-pie-legend-wrapper {
+  width: 400px !important;
+  height: 260px !important;
+} 
+
+.advanced-pie-legend {
+  width:200px !important;
+} */
 
 /* Total value format  */
 .advanced-pie-legend .total-value {
@@ -106,6 +152,10 @@ background: white !important;
   padding-bottom: 20px !important;
   height: 30px !important;
   width: 30px !important;
+}
+
+.chart-legend li {
+  padding-top: 2px !important;
 }
 
 .reading-label {

@@ -1,12 +1,21 @@
 <div id="test" *ngIf="post">
-    <img src="assets/img/{{post.majCom}}-logo.png" height="120">     
-        <!-- <button (click)="printPage()">Print</button>   -->
-        <h5><u>Fiscal Year 2019 FPDS-NG Data as of {{post.reportDate}}</u></h5>
+    <table>
+        <tr>
+            <td class="logo">
+                <img src="assets/img/{{post.majCom}}-logo.png" height="120" align="middle">
+            </td>
+        </tr>
+        <tr>
+            <td class="date">
+                <u>Fiscal Year 2020 FPDS-NG Data as of {{post.reportDate}}</u>
+            </td>
+        </tr>
+    </table>
     <table>  
         <tr>
             <td>
-                <ngx-charts-advanced-pie-chart 
-                    [view]="[400, 200]" 
+                <ngx-charts-advanced-pie-chart   
+                    [view]="[400,250]"
                     [scheme]="colorScheme"
                     [valueFormatting]="sbFormat" 
                     [results]="post.spendBreak"
@@ -16,13 +25,12 @@
             </td>
             <td>
                 <tr> 
-                    <td class="title">Top Four Fiscal Year 2019 Small Business Portfolio 
+                    <td class="title">Top Fiscal Year 2020 Small Business Portfolio 
                                       Group Spends as of {{post.reportDate}}
                     </td>
                 </tr>
                 <tr>     
                     <ngx-charts-tree-map 
-                        class="chart-container" 
                         [view]="[805,230]"
                         [scheme]="portScheme" 
                         [results]="post.portGroups"
@@ -33,35 +41,6 @@
                 </tr>
             </td>  
         </tr>    
-    </table>
-    <table>
-        <tr>
-            <td class="title">
-                Fiscal Year 2016, 2017, 2018, and 2019 Year-to-Date Prime Contract Awards through {{post.reportDate}}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ngx-charts-bar-horizontal-stacked 
-                    class="chart-container" 
-                    [view]="[1200, 220]" 
-                    [scheme]="breakScheme"
-                    [results]="post.breakAward" 
-                    [legend]="true" 
-                    [showGridLines]="true" 
-                    [legendTitle]="null" 
-                    [xAxis]="true" 
-                    [showXAxisLabel]="true" 
-                    [xAxisTickFormatting]="treeFormat"
-                    [yAxis]="true" 
-                    [showYAxisLabel]="true" 
-                    [xScaleMax]="90" 
-                    [tooltipDisabled]="false" 
-                    [barPadding]="8"
-                    [animations]="false">
-                </ngx-charts-bar-horizontal-stacked>
-            </td>
-        </tr>
     </table>
     <table>
         <td>
@@ -87,7 +66,7 @@
                     [backgroundColor]="'gray'" [append]="'%'">
                 </ngx-gauge>  
             </tr>
-            <ngx-charts-number-card [view]="[1200,125]" 
+            <ngx-charts-number-card [view]="[1200,75]" 
                     [scheme]="post.cardColor" 
                     [results]="post.cardSpend" 
                     [innerPadding]="5"
@@ -95,9 +74,62 @@
             </ngx-charts-number-card>  
         </td>
     </table>
+    <table>
+            <tr>
+                <td class="title">
+                    Fiscal Year 2017, 2018, 2019, and 2020 Year-to-Date Prime Contract Awards through {{post.reportDate}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ngx-charts-bar-horizontal-stacked 
+                        class="chart-container" 
+                        [view]="[1200, 220]" 
+                        [scheme]="breakScheme"
+                        [results]="post.breakAward" 
+                        [legend]="true" 
+                        [showGridLines]="true" 
+                        [legendTitle]="null" 
+                        [xAxis]="true" 
+                        [showXAxisLabel]="true" 
+                        [xAxisTickFormatting]="treeFormat"
+                        [yAxis]="true" 
+                        [showYAxisLabel]="true" 
+                        [xScaleMax]="90" 
+                        [tooltipDisabled]="false" 
+                        [barPadding]="8"
+                        [animations]="false">
+                    </ngx-charts-bar-horizontal-stacked>
+                </td>
+            </tr>
+        </table>
+        <table>
+                <tr>
+                    <td class="title">
+                        SBIR Metrics for Reporting Period {{post.sbirDate}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ngx-charts-bar-horizontal-stacked 
+                            class="chart-container" 
+                            [view]="[1200, 220]" 
+                            [scheme]="breakScheme"
+                            [results]="post.breakAward" 
+                            [legend]="true" 
+                            [showGridLines]="true" 
+                            [legendTitle]="null" 
+                            [xAxis]="true" 
+                            [showXAxisLabel]="true" 
+                            [xAxisTickFormatting]="treeFormat"
+                            [yAxis]="true" 
+                            [showYAxisLabel]="true" 
+                            [xScaleMax]="90" 
+                            [tooltipDisabled]="false" 
+                            [barPadding]="8"
+                            [animations]="false">
+                        </ngx-charts-bar-horizontal-stacked>
+                    </td>
+                </tr>
+            </table>
 </div>
-<!-- <button 
-[useExistingCss]="true"
-    printTitle="{{post.majCom}}"
-    printSectionId="test" 
-    ngxPrint>print</button>  -->

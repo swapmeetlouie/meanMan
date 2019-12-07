@@ -35,14 +35,14 @@ export class PostsService {
                             portName6: string; portValue6: number;
                             portGroups: object;
                             // SB-OTSB breakdowns
-                            otsbProd_16: number; otsbServ_16: number; sbProd_16: number; sbServ_16: number;
+                            // otsbProd_16: number; otsbServ_16: number; sbProd_16: number; sbServ_16: number;
                             otsbProd_17: number; otsbServ_17: number; sbProd_17: number; sbServ_17: number;
                             otsbProd_18: number; otsbServ_18: number; sbProd_18: number; sbServ_18: number;
                             otsbProd_19: number; otsbServ_19: number; sbProd_19: number; sbServ_19: number;
-                            
+                            otsbProd_20: number; otsbServ_20: number; sbProd_20: number; sbServ_20: number;
 
                             }>(
-      "http://localhost:9876/api/dash_fy19/" + majCom // Development API location 
+      "http://192.168.1.29:9876/api/dash_fy20/" + majCom // Development API location 
     );
   }
   public goal: Goal[] = []; // Empty array 
@@ -76,7 +76,7 @@ export class PostsService {
       hubzoneStatus: string;
       hubzoneColor: string;
       }>(
-        "http://localhost:9876/api/goal_fy19/" + majCom // Development API location 
+        "http://localhost:9876/api/goal_fy20/" + majCom // Development API location 
       );
     }};
 
