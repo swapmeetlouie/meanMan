@@ -7,7 +7,7 @@
         </tr>
         <tr>
             <td class="date">
-                <u>Fiscal Year 2020 FPDS-NG Data as of {{post.reportDate}}</u>
+                <u>Validated Fiscal Year 2019 FPDS-NG Data as of {{post.reportDate}}</u>
             </td>
         </tr>
     </table>
@@ -27,33 +27,31 @@
                 <i>Puerto Rican based vendors and/or Local
                    Area Set Aside Awards accounted for 
                    ${{(post.ndaaAward/1000000).toFixed(2)}}M in 
-                   additional FY20 SB awards.  These awards are 
+                   additional FY19 SB awards.  These awards are 
                    credited twice (per NDAA 2019) in the below SB and 
                    Socioeconomic Group awards and performances.</i>
                 </tr>
-                <tr class="ndaa" [hidden] *ngIf="post.ndaaAward === 0 && post.lakeAward === 0">
+                <tr class="ndaa" [hidden] *ngIf="post.ndaaAward === 0">
                     <i><p><br><br><br><br><br></p></i>
                     </tr>
+
+<!-- 
                 <tr class="lake" [hidden] *ngIf="post.majCom === 'NAVAIR'">
                     <i>Lakehurst awarded ${{post.lakeAward}}M in removed<br>
                         SBIR awards funded by other MajComs.</i>
                 </tr>
-                <tr class="lake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward >= 1 && post.ndaaAward === 0">
+                <tr class="lake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward >= 1">
                     <i>SB includes ${{post.lakeAward}}M  in SBIR funds <br>
                         awarded by NAVAIR Lakehurst.</i> 
-                        <p><br><br><br><br></p>
-                </tr> 
-                <!-- <tr class="sspLake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward >= 1">
-                    <i>SB includes ${{post.lakeAward}}M  in SBIR funds <br>
+                </tr>     
+                <tr class="lake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward < 1 && post.majCom!== 'NavyOverall'">
+                    <i>SB includes ${{post.lakeAward*1000}}K  in SBIR funds <br>
                         awarded by NAVAIR Lakehurst.</i> 
-                </tr>      -->
-                <tr class="sspLake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward < 1 && post.majCom!== 'NavyOverall'">
-                    <i>SB includes ${{post.lakeAward*1000}}K  in SBIR funds awarded by NAVAIR Lakehurst.</i> 
-                </tr>  
+                </tr>  -->
             </td>
             <td>
                 <tr> 
-                    <td class="title">Top Fiscal Year 2020 Year-to-Date Small Business Portfolio 
+                    <td class="title">Top Fiscal Year 2019 Small Business Portfolio 
                                       Group Spends
                                        <!-- as of {{post.reportDate}} -->
                     </td>
@@ -106,7 +104,8 @@
     <table class="bars">
             <tr>
                 <td class="title">
-                    Fiscal Year 2017, 2018, 2019, and FY20 Year-to-Date Prime Contract Awards through {{post.reportDate}} 
+                    Fiscal Year 2016, 2017, 2018, and 2019 Full Year Prime Contract Awards
+                     <!-- through {{post.reportDate}} -->
                 </td>
             </tr>
             <tr>

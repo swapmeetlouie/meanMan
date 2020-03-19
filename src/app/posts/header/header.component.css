@@ -2,7 +2,7 @@
   background-color: #024272 !important;
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 110px;
   /* opacity: 0.7; */
   z-index: 1;
   top: 0;
@@ -16,6 +16,7 @@
   padding-left: 10px;
   color:whitesmoke !important;
   vertical-align: middle;
+  height: 75px;
 }
 
 /* MajCom dropdown box */
@@ -41,7 +42,17 @@
 /* MajCom list item text */
 .dropdown-item {
   font-family: tahoma !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
+  width: 180px !important;
+  background-color: #024272 !important;
+  color:whitesmoke !important;
+  text-align: left !important;
+}
+
+/* Sub Menu */
+.dropdown-item2 {
+  font-family: tahoma !important;
+  font-size: 14px !important;
   width: auto !important;
   background-color: #024272 !important;
   color:whitesmoke !important;
@@ -56,8 +67,8 @@
 .dropdown-submenu>.dropdown-menu {
   top: 0;
   left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
+  margin-top: 0px;
+  margin-left: 0px;
   -webkit-border-radius: 0 6px 6px 6px;
   -moz-border-radius: 0 6px 6px;
   border-radius: 0 6px 6px 6px;
@@ -78,13 +89,18 @@
   border-width: 5px 0 5px 5px;
   border-left-color: #ccc;
   margin-top: 5px;
-  margin-right: -10px;
+  margin-right: 0px;
 }
 
 .dropdown-submenu:hover>a:after {
   border-left-color: #fff;
 }
-
+.dropdown-menu>li>a {
+  padding-top: 0.25rem;
+padding-right: 1.5rem;
+padding-bottom: 0.25rem;
+padding-left: 1.5rem;
+}
 .dropdown-submenu.pull-left {
   float: none;
 }

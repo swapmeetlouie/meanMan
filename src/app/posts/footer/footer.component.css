@@ -4,7 +4,9 @@
     height: 45px;
     position: relative;
 }
-
+.navbar {
+  margin-bottom: 0px !important;
+}
 /* Font-Awesome Chart setting */
 .fa-2x {
     vertical-align: middle;

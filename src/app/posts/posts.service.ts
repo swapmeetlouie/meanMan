@@ -12,7 +12,10 @@ export class PostsService {
   getPost(majCom: string) { // Retrieval of dashboard data
       return this.http.get<{ id: string; majCom: string;
                             reportDate: string;
-                            totalSpend: number; sbSpend: number; otsbSpend: number;
+                            totalSpend: number; 
+                            sbSpend: number; 
+                            newSbSpend: number;
+                            otsbSpend: number;
                             percSb: number; 
                             spendBreak: object; 
                             goalSb: number; maxSb: number; 
@@ -40,6 +43,8 @@ export class PostsService {
                             otsbProd_18: number; otsbServ_18: number; sbProd_18: number; sbServ_18: number;
                             otsbProd_19: number; otsbServ_19: number; sbProd_19: number; sbServ_19: number;
                             otsbProd_20: number; otsbServ_20: number; sbProd_20: number; sbServ_20: number;
+                            lakeAward: number;
+                            ndaaAward: number;
 
                             }>(
       "http://192.168.1.29:9876/api/dash_fy20/" + majCom // Development API location 
@@ -52,7 +57,7 @@ export class PostsService {
       importDt: string;
       majCom: string; totalSpend: number;  
       sbSpend: number;
-      sbPerc: number;  sbGoal: number;
+      percSb: number;  sbGoal: number;
       sbStatus: string;
       sbColor: string;
       sdbSpend: number;
@@ -75,8 +80,11 @@ export class PostsService {
       hubzoneGoal: number;
       hubzoneStatus: string;
       hubzoneColor: string;
+      numMet: string;
+      numMetAvg: string;
+      numMetProj: string;
       }>(
-        "http://localhost:9876/api/goal_fy20/" + majCom // Development API location 
+        "http://192.168.1.29:9876/api/goal_fy20/" + majCom // Development API location 
       );
     }};
 

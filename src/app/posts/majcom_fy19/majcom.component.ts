@@ -89,7 +89,7 @@ export class MajcomComponent implements OnInit {
       return '$' + (v/1000).toFixed(0) + 'B'
     }
     else { 
-      return '$' + (v*1).toFixed(2) + 'M';
+      return '$' + (v*1).toFixed(0) + 'M';
     }
   }
    

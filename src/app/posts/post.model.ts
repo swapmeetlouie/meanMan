@@ -5,6 +5,7 @@ export class Post {
   reportDate: string;
   totalSpend: number;
   sbSpend: number;
+  newSbSpend: number; 
   otsbSpend: number;
   percSb: number;
   spendBreak: object; // Object for use in ngx-charts
@@ -66,7 +67,9 @@ export class Post {
   otsbServ_20: number;
   sbProd_20: number;
   sbServ_20: number;
-  breakAward: object; // Object for use in ngx-charts
+  breakAward: object;
+  lakeAward: number; // Object for use in ngx-charts
+  ndaaAward: number;
 };
 
 export class Goal {
@@ -75,7 +78,7 @@ export class Goal {
   majCom: string;
   totalSpend: number;
   sbSpend: number;
-  sbPerc: number;
+  percSb: number;
   sbGoal: number;
   sbStatus: string;
   sbColor: string;
@@ -99,4 +102,7 @@ export class Goal {
   hubzoneGoal: number;
   hubzoneStatus: string; 
   hubzoneColor: string;
+  numMet: string;
+  numMetAvg: string;
+  numMetProj: string;
 };

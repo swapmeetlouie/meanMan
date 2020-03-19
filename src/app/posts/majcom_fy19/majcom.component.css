@@ -304,29 +304,9 @@ td.sp {
 tr.lake {
   position: relative !important;
   top: -60px !important;
-  left: 60px !important;
+  left: 110px !important;
   line-height: 1.25 !important;
-  display: block !important;
-  width: 350px;
-  word-wrap: normal;
-  color: darkslateblue;
-  text-align: left;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px !important;
-}
-
-
-tr.sspLake {
-  position: relative !important;
-  top: -60px !important;
-  left: 60px !important;
-  line-height: 1.25 !important;
-  display: block !important;
-  width: 350px;
-  color: darkslateblue;
-  word-wrap: normal;
-  text-align: left;
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 13px !important;

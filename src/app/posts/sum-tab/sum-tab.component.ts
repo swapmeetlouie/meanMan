@@ -2,6 +2,7 @@
 import { Component, OnInit, ViewEncapsulation, NgModule } from "@angular/core";
 import { ActivatedRoute, ParamMap } from "@angular/router";
 import { Goal } from "../post.model";
+// import { Post } from "../post.model";
 import { PostsService } from "../posts.service";
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NgxGaugeModule } from 'ngx-gauge';
@@ -37,6 +38,7 @@ export class SumTabComponent implements OnInit {
 // ]},{ 'name': 'FY19', 'series': [ {'name': 'OTSB Products', 'desc': 'FY19 YTD', 'value': 1951.254336},{'name': 'OTSB Services', 'desc': 'FY19 YTD', 'value': 878.560032},{'name': 'SB Products', 'desc': 'FY19 YTD', 'value': 183.090613},{'name': 'SB Services', 'desc': 'FY19 YTD', 'value': 423.756270}]}]
 
   goal: Goal;
+  // post: Post;
   isLoading = false;
   public majCom: string;
 
@@ -60,7 +62,7 @@ export class SumTabComponent implements OnInit {
             majCom: goalData.majCom,
             totalSpend: goalData.totalSpend, 
             sbSpend: goalData.sbSpend, 
-            sbPerc: goalData.sbPerc,
+            percSb: goalData.percSb,
             sbGoal: goalData.sbGoal,
             sbColor: goalData.sbColor,
             sbStatus: goalData.sbStatus,
@@ -83,7 +85,10 @@ export class SumTabComponent implements OnInit {
             hubzonePerc: goalData.hubzonePerc,
             hubzoneGoal: goalData.hubzoneGoal,
             hubzoneStatus: goalData.hubzoneStatus,       
-            hubzoneColor: goalData.hubzoneColor,          
+            hubzoneColor: goalData.hubzoneColor,      
+            numMet: goalData.numMet,
+            numMetAvg: goalData.numMetAvg,
+            numMetProj: goalData.numMetProj,
       }
     });
 

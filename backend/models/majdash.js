@@ -7,6 +7,7 @@ const majSchema = mongoose.Schema({
   reportDate: { type: String },
   totalSpend: { type: Number },
   sbSpend: { type: Number },
+  newSbSpend: { type: Number },
   otsbSpend: { type: Number },
   percSb:  { type: Number },
   goalSb: { type: Number },
@@ -64,6 +65,8 @@ const majSchema = mongoose.Schema({
   otsbServ_20: { type: Number },
   sbProd_20: { type: Number },
   sbServ_20: { type: Number },  
+  lakeAward: { type: Number },
+  ndaaAwards: { type: Number },
 }
 });
 

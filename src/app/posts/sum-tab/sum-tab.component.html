@@ -1,7 +1,36 @@
 <div id="test" *ngIf="goal">
-    <img src="assets/img/{{goal.majCom}}-logo.png" height="120">     
-        <!-- <button (click)="printPage()">Print</button>   -->
-        <h5><u>Year-to-Date Fiscal Year Awarding Data as of {{goal.importDt}}</u></h5>
+    <table>
+        <tr>
+        <td class="logo">
+                <img src="assets/img/{{goal.majCom}}-logo.png" height="80" align="right !important">           
+        </td>
+        <td>
+        <table class="mid">
+                <tr>
+                    <td class="faz">
+                        <i class="fas fa-file-excel fa-exc"></i>
+                    </td>
+                    <td class="faz">
+                        <i class="far fa-file-pdf fa-pdf"></i>
+                    </td>
+                    <td class="faz">
+                        <i class="fas fa-print fa-pnt"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sp">Data</td>
+                    <td class="sp">PDF</td>
+                    <td class="sp">Print</td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="date">
+                    <h5><u>Year-to-Date Fiscal Year Awarding Data as of {{ goal.importDt }}</u></h5>
+            </td>
+        </tr>
+    </table>
         <table id="goals">
             <tr>         
                 <th colspan="2">Award Area</th>
@@ -38,8 +67,8 @@
             <tr>
                 <td>SB Goal</td>
                 <td>{{ goal.sbGoal | percent: '1.2-2' }}</td>
-                <td>{{ goal.sbGoal }}</td>
-                <td>{{ goal.sbGoal }}</td>
+                <td>{{ goal.sbGoal | percent: '1.2-2'}}</td>
+                <td>{{ goal.sbGoal | percent: '1.2-2'}}</td>
             </tr>
             <tr class="bottom">
                 <td>SB Goal Status</td>
@@ -163,9 +192,9 @@
         <!-- HUBZone  -->
             <tr>
                 <td colspan="2">Goals Met</td>
-                <td class="meet">5</td>
-                <td class={{goal.numMetAvg}}>2</td>
-                <td class="{{goal.numMetProj}}">Should Meet All</td>
+                <td class="meet">{{ goal.numMet }}</td>
+                <td class="meet">{{ goal.numMetAvg }}</td>
+                <td class="meet">Will Meet</td>
             </tr>
         </table>
    <br>

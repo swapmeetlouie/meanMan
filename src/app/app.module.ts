@@ -23,6 +23,7 @@ import { FooterComponent } from './posts/footer/footer.component';
 import { SplashComponent } from './posts/splash/splash.component';
 import { NgxPrintModule } from 'ngx-print';
 import { SumTabComponent } from './posts/sum-tab/sum-tab.component';
+import { SbirComponent } from './sbir/sbir.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SumTabComponent } from './posts/sum-tab/sum-tab.component';
     MajcomComponent,
     FooterComponent,
     SplashComponent,
-    SumTabComponent
+    SumTabComponent,
+    SbirComponent
   ],
   imports: [
     BrowserModule,

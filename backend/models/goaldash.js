@@ -7,7 +7,7 @@ const goalSchema = mongoose.Schema({
     majCom: { type: String },
     totalSpend: { type: Number },
     sbSpend: { type: Number },
-    sbPerc: { type: Number },
+    percSb: { type: Number },
     sbGoal: { type: Number },
     sbStatus: { type: String },
     sbColor: { type: String },
@@ -31,6 +31,9 @@ const goalSchema = mongoose.Schema({
     hubzoneGoal: { type: Number },
     hubzoneStatus: { type: String },
     hubzoneColor: { type: String },
+    numMet: { type: String },
+    numMetAvg: { type: String },
+    numMetProj: { type: String },
     })
 
 module.exports = mongoose.model('goal_fy19', goalSchema);
