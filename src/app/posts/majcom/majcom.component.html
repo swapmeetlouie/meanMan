@@ -47,8 +47,9 @@
                     <i>SB includes ${{post.lakeAward}}M  in SBIR funds <br>
                         awarded by NAVAIR Lakehurst.</i> 
                 </tr>      -->
-                <tr class="sspLake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward < 1 && post.majCom!== 'NavyOverall'">
+                <tr class="sspLake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && (post.lakeAward < 1 && post.lakeAward>0) && post.majCom!== 'NavyOverall'">
                     <i>SB includes ${{post.lakeAward*1000}}K  in SBIR funds awarded by NAVAIR Lakehurst.</i> 
+                    <p><br><br><br><br></p>
                 </tr>  
             </td>
             <td>

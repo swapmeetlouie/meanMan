@@ -275,7 +275,9 @@ export class MajcomComponent implements OnInit {
                         ]}
                       ],
                       lakeAward: postData.lakeAward,
-                      ndaaAward: postData.ndaaAward,
+                      ndaaAward: postData.ndaaAward
+                      // sbCovid: postData.sbCovid,
+                      // totalCovid: postData.totalCovid,
                       // this.percSb = postData.percSb
         }
       });

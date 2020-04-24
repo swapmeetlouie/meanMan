@@ -67,7 +67,9 @@ const majSchema = mongoose.Schema({
   sbServ_20: { type: Number },  
   lakeAward: { type: Number },
   ndaaAwards: { type: Number },
-}
+  // sbCovid: { type: Number },
+  // totalCovid: { type: Number },
+  }
 });
 
 // MongoDB collection defined
