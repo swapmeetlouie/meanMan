@@ -3,11 +3,12 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 body {
-  height: 950px !important;
+  height: 850px !important;
   font-family: tahoma !important; 
   vertical-align: left;
   margin: 0;
   padding-top: 100px !important;
+  padding-bottom: -100px !important;
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -19,7 +20,7 @@ body {
 
 
 #test {
-  height: 1050px !important;
+  height: 950px !important;
 }
 
 h5 {
@@ -251,6 +252,7 @@ table.top {
   height: 300px !important;
   position: relative !important;
   top: -25px;
+  /* 50 NAVAIR */
   /* line-height: 1.5px !important; */
   /* left: 8px; */
   border-collapse: collapse;
@@ -262,7 +264,7 @@ table.top {
 table.mid {
   height: 300px !important;
   position: relative !important;
-  top: -75px;
+  top: -50px;
   /* line-height: 1.5px !important; */
   /* left: 8px; */
   border-collapse: collapse;
@@ -274,8 +276,8 @@ table.mid {
 table.bars {
   /* height: 300px !important; */
   position: relative !important;
-  top: -75px;
-  /* line-height: 1.5px !important; */
+  top: -50px;
+    /* line-height: 1.5px !important; */
   /* left: 8px; */
   border-collapse: collapse;
   padding: 0; 
@@ -303,39 +305,53 @@ td.sp {
 
 tr.lake {
   position: relative !important;
-  top: -60px !important;
-  left: 60px !important;
+  top: -72px !important;
+  left: 30px !important;
   line-height: 1.25 !important;
   display: block !important;
-  width: 350px;
+  width: 325px;
   word-wrap: normal;
-  color: darkslateblue;
+  /* color: darkslateblue; */
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px !important;
+}
+
+tr.lake_2 {
+  position: relative !important;
+  top: -10px !important;
+  left: 30px !important;
+  line-height: 1.25 !important;
+  display: block !important;
+  width: 325px;
+  word-wrap: normal;
+  /* color: darkslateblue; */
   text-align: left;
   font-style: normal;
   font-weight: bold;
   font-size: 13px !important;
 }
 
-
 tr.sspLake {
   position: relative !important;
-  top: -60px !important;
-  left: 60px !important;
+  top: -65px !important;
+  left: 30px !important;
   line-height: 1.25 !important;
   display: block !important;
   width: 350px;
-  color: darkslateblue;
+  /* color: darkslateblue; */
   word-wrap: normal;
   text-align: left;
   font-style: normal;
   font-weight: bold;
-  font-size: 13px !important;
+  font-size: 10px !important;
 }
 
 tr.ndaa {
   position: relative !important;
-  top: -70px !important;
-  left: 60px !important;
+  top: -72px !important;
+  left: 30px !important;
   line-height: 1.25 !important;
   display: block !important;
   width: 350px;
@@ -343,5 +359,42 @@ tr.ndaa {
   text-align: left;
   font-style: normal;
   font-weight: bold;
-  font-size: 13px !important;
+  font-size: 10px !important;
+}
+
+b.g {
+  color: green
+}
+
+a.lank {
+  color: blue !important;
+  text-decoration: underline !important;
+}
+
+tr.lank_2 {
+  position: relative !important;
+  top: -70px !important;
+  left: 30px !important;
+  line-height: 1.25 !important;
+  display: block !important;
+  width: 350px;
+  word-wrap: normal;
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px !important; 
+}
+
+tr.lank {
+  position: relative !important;
+  top: -70px !important;
+  left: 30px !important;
+  line-height: 1.25 !important;
+  display: block !important;
+  width: 350px;
+  word-wrap: normal;
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px !important; 
 }

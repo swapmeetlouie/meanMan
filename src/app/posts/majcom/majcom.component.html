@@ -24,32 +24,45 @@
 
                 </ngx-charts-advanced-pie-chart>  
                 <tr class="ndaa" [hidden] *ngIf="post.ndaaAward > 0">
-                <i>Puerto Rican based vendors and/or Local
-                   Area Set Aside Awards accounted for 
-                   ${{(post.ndaaAward/1000000).toFixed(2)}}M in 
-                   additional FY20 SB awards.  These awards are 
-                   credited twice (per NDAA 2019) in the below SB and 
-                   Socioeconomic Group awards and performances.</i>
-                </tr>
+                <i><a class="lank" href="https://www.congress.gov/bill/115th-congress/house-bill/5515/text">Per NDAA 2019</a> 
+                   Puerto Rican, Guam, N. Marianas Is, US VI based Small Business vendors and/or Local
+                   Area Set Aside Awards are "double credited" and accounted for 
+                   <b class="g">${{(post.ndaaAward/1000000).toFixed(2)}}M</b> in 
+                   additional FY20 SB awards.</i></tr>
+                <!-- <br>
+                <br-->
                 <tr class="ndaa" [hidden] *ngIf="post.ndaaAward === 0 && post.lakeAward === 0">
-                    <i><p><br><br><br><br><br></p></i>
-                    </tr>
-                <tr class="lake" [hidden] *ngIf="post.majCom === 'NAVAIR'">
-                    <i>Lakehurst awarded ${{post.lakeAward}}M in removed<br>
-                        SBIR awards funded by other MajComs.</i>
-                </tr>
-                <tr class="lake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward >= 1 && post.ndaaAward === 0">
-                    <i>SB includes ${{post.lakeAward}}M  in SBIR funds <br>
-                        awarded by NAVAIR Lakehurst.</i> 
-                        <p><br><br><br><br></p>
+                    <i><p><br><br><br></p></i>
                 </tr> 
-                <!-- <tr class="sspLake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward >= 1">
-                    <i>SB includes ${{post.lakeAward}}M  in SBIR funds <br>
-                        awarded by NAVAIR Lakehurst.</i> 
-                </tr>      -->
+                <tr class="lake" [hidden] *ngIf="post.majCom === 'NAVAIR'">
+                    <i>Lakehurst awarded ${{post.lakeAward}}M in removed SBIR awards funded by other MajComs.</i>
+                </tr>
+     
+                <!-- <tr class="lake_2" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward >= 1 && post.ndaaAward === 0">
+                    <i>SB includes ${{post.lakeAward}}M  in SBIR funds awarded by NAVAIR Lakehurst.</i> 
+                         <p><br><br><br><br></p> 
+                </tr>  -->
+                <tr class="lank_2" [hidden] *ngIf="post.sbCovid === 0 && post.totalCovid > 0 && post.totalCovid < 1">
+                    <a class="lank" href="https://www.acq.osd.mil/dpap/policy/policyvault/Implementation_Guidance_CARES_3610_DPC.pdf">COVID-19 Related awards</a> accounted for <b class="g">${{(post.totalCovid*1000).toFixed(2)}}K</b>
+                    in total awards year-to-date.
+                </tr>
+                <tr class="lank" [hidden] *ngIf="post.sbCovid !== 0 && post.totalCovid !== 0 && post.totalCovid >= 0.01">
+                    <i><a class="lank" href="https://www.acq.osd.mil/dpap/policy/policyvault/Implementation_Guidance_CARES_3610_DPC.pdf">COVID-19 Related awards</a>
+                     accounted for <b class="g">${{(post.totalCovid).toFixed(2)}}M</b>
+                    with <b class="g">${{(post.sbCovid).toFixed(2)}}M ({{((post.sbCovid/post.totalCovid)*100).toFixed(2)}}%)</b> of those awards going to Small Business.</i>
+                </tr>
+                <tr class="lank" [hidden] *ngIf="post.sbCovid !== 0 && post.totalCovid !== 0 && post.totalCovid < 0.01">
+                   <i> <a class="lank" href="https://www.acq.osd.mil/dpap/policy/policyvault/Implementation_Guidance_CARES_3610_DPC.pdf">COVID-19 Related awards</a>
+                     accounted for <b class="g">${{(post.totalCovid*1000000).toFixed(0)}}</b>
+                    with <b class="g">${{(post.sbCovid*1000000).toFixed(0)}} ({{((post.sbCovid/post.totalCovid)*100).toFixed(0)}}%)</b> of those awards going to Small Business.</i>
+                </tr>
+                <tr class="sspLake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && post.lakeAward >= 1">
+                    <i>SB includes <b class="g">${{post.lakeAward}}M</b>  in SBIR funds awarded by NAVAIR Lakehurst.</i> 
+                </tr> 
+                <!-- <p></p>     -->
                 <tr class="sspLake" [hidden] *ngIf="post.majCom !== 'NAVAIR' && (post.lakeAward < 1 && post.lakeAward>0) && post.majCom!== 'NavyOverall'">
                     <i>SB includes ${{post.lakeAward*1000}}K  in SBIR funds awarded by NAVAIR Lakehurst.</i> 
-                    <p><br><br><br><br></p>
+                    <!-- <p><br><br><br><br></p> -->
                 </tr>  
             </td>
             <td>

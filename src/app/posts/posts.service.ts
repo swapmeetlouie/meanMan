@@ -45,11 +45,11 @@ export class PostsService {
                             otsbProd_20: number; otsbServ_20: number; sbProd_20: number; sbServ_20: number;
                             lakeAward: number;
                             ndaaAward: number;
-                            // sbCovid: number;
-                            // totalCovid: number;
+                            sbCovid: number;
+                            totalCovid: number;
 
                             }>(
-      "http://192.168.1.29:9876/api/dash_fy20/" + majCom // Development API location 
+      "http://192.168.1.19:9876/api/dash_fy20/" + majCom // Development API location 
     );
   }
   public goal: Goal[] = []; // Empty array 
@@ -86,7 +86,7 @@ export class PostsService {
       numMetAvg: string;
       numMetProj: string;
       }>(
-        "http://192.168.1.29:9876/api/goal_fy20/" + majCom // Development API location 
+        "http://192.168.1.19:9876/api/goal_fy20/" + majCom // Development API location 
       );
     }};
 

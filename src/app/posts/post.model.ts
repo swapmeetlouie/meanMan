@@ -70,8 +70,8 @@ export class Post {
   breakAward: object;
   lakeAward: number; // Object for use in ngx-charts
   ndaaAward: number;
-  // sbCovid: number; 
-  // totalCovid: number;
+  sbCovid: number; 
+  totalCovid: number;
 };
 
 export class Goal {
